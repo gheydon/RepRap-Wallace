@@ -21,7 +21,7 @@ include <pulley with collar.scad>;
   translate() {
     translate([-77, -13, 0]) rotate(180) x_end(2);
     translate([-27, -40, 0]) rotate(-90) x_carriage();
-    translate([-70, -65, 0]) for(side = [-1,1]) translate([0, side * motor_screw_spacing / 2, 0]) leadscrew_coupler();
+    translate([-70, -65, 0]) for(side = [-1,1]) translate([0, side * motor[ 1 ] / 2, 0]) leadscrew_coupler();
     translate([-92, -60, 0]) y_idler();
     translate([-33, -90, 0]) for(side = [0, 1]) mirror([side, 0, 0]) translate([-rod_size * 2.5 - 3, 0, 0]) z_top_clamp();
   }
