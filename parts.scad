@@ -14,11 +14,17 @@ LM10UU = [ "LL10UU", 19, 29 ];
 8mm_smooth_rod = [ "8mm Smooth Rod", 8, LM8UU ];
 10mm_smooth_rod = [ "10mm Smooth Rod", 10, LM10UU ];
 
+// nut type
+// [ desxcription, nut size ]
+M6_nut = [ "M6 Nut", 12 ];
+M8_nut = [ "M8 Nut", 15 ];
+M10_nut = [ "M10 Nut", 18 ];
+
 // threaded rod
 // [ description, rod size, rod nut size ]
-M6_threaded_rod = [ "6mm Threaded Rod", 6, 12 ];
-M8_threaded_rod = [ "8mm Threaded Rod", 8, 15 ];
-M10_threaded_rod = [ "10mm Threaded Rod", 10, 18 ];
+M6_threaded_rod = [ "6mm Threaded Rod", 6, M6_nut ];
+M8_threaded_rod = [ "8mm Threaded Rod", 8, M8_nut ];
+M10_threaded_rod = [ "10mm Threaded Rod", 10, M10_nut ];
 
 // motor type
 // [ description, screw spacing, casing, height (add additional 4mm), motor shaft ]
